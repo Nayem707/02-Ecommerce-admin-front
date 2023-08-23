@@ -1,8 +1,8 @@
 import React from 'react';
+import OrderList from '../../components/common/OrderList';
 import Sidebar from '../../layout/SideNavStyle';
-import UsersList from '../../components/common/UsersList';
 
-const UsersView = () => {
+const OrderView = () => {
   return (
     <div className='bg-white relative '>
       <div className=' col-span-2 flex '>
@@ -10,9 +10,9 @@ const UsersView = () => {
           <Sidebar />
         </div>
         <div className='w-full pt-10 px-4 '>
-          <div className='text-3xl mb-6'>Users List</div>1
+          <div className='text-3xl mb-6'>Order List Overview</div>
           <div className=''>
-            <UsersList />
+            <OrderList />
           </div>
         </div>
       </div>
@@ -20,4 +20,4 @@ const UsersView = () => {
   );
 };
 
-export default UsersView;
+export default OrderView;

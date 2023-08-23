@@ -52,6 +52,12 @@ export default function Sidebar() {
               </li>
 
               <li className='items-center'>
+                <Link className='' to='/orders'>
+                  Order List
+                </Link>
+              </li>
+
+              <li className='items-center'>
                 <Link className='' to='/setting'>
                   Setting
                 </Link>
