@@ -2,8 +2,7 @@ import React from 'react';
 
 const AddProduct = () => {
   return (
-    <div className='relative min-h-screen flex items-center justify-center bg-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center'>
-      <div className='absolute bg-black opacity-60 inset-0 z-0'></div>
+    <div className=' min-h-screen flex justify-center bg-center py-12 px-4 sm:px-6 lg:px-8 items-center'>
       <div className='max-w-md w-full space-y-8 p-10 bg-white rounded-xl shadow-lg z-10'>
         <div className='grid  gap-8 grid-cols-1'>
           <div className='flex flex-col '>
@@ -18,7 +17,7 @@ const AddProduct = () => {
                     <div className='w-12 h-12 mr-4 flex-none rounded-xl border overflow-hidden'>
                       <img
                         className='w-12 h-12 mr-4 object-cover'
-                        src=''
+                        src='https://poshgarments.com/wp-content/uploads/2021/09/Mens-Shirt-MWS0001-450x450.jpg'
                         alt='Avatar Upload'
                       />
                     </div>
