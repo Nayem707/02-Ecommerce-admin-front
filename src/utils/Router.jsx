@@ -7,23 +7,27 @@ import {
 import App from '../App';
 import HomeView from '../pages/home/HomeView';
 import LoginView from '../pages/login/LoginView';
+import RegisterView from '../pages/register/RegisterView';
 import ProductsView from '../pages/products/ProductsView';
 import SettingView from '../pages/setting/SettingView';
+import PrivateRoute from './ProvetRoute';
+import ErrorView from '../pages/error/ErrorView';
+import Dashboard from '../pages/dashboard/Dashboard';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
-      <Route index={true} path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
+      <Route index={true} path='/' element={<HomeView />} />
       <Route path='/login' element={<LoginView />} />
-      <Route path='/register' element={<SginView />} />
+      <Route path='/register' element={<RegisterView />} />
       <Route path='/' element={<PrivateRoute />}>
-        <Route path='/profile' element={<Profile />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/products' element={<ProductsView />} />
         <Route path='/setting' element={<SettingView />} />
-        <Route path='/edit/:id' element={<EditView />} />
+        {/* <Route path='/edit/:id' element={<EditView />} />
         <Route path='/create' element={<CreateNote />} />
         <Route path='/cards' element={<CardS />} />
-        <Route path='/card/:id' element={<Card />} />
+        <Route path='/card/:id' element={<Card />} /> */}
       </Route>
       <Route path='*' element={<ErrorView />} />
     </Route>

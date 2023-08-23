@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const RegisterView = () => {
   return (
-    <div className='min-w-screen bg-gray-900 flex items-center justify-center m-10'>
+    <div className='min-w-screen bg-gray-900 flex items-center justify-center'>
       <div className='bg-gray-100 text-gray-500 shadow-xl w-full  '>
         <div className='md:flex w-full '>
           <div className='hidden md:block w-1/2 bg-orange-200 p-24 rounded-lg '>

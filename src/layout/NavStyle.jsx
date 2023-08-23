@@ -5,16 +5,25 @@ function NavStyle() {
   return (
     <>
       {/* Navbar */}
-      <nav className='absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4'>
+      <nav className=' bg-slate-600 top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4'>
         <div className='w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4'>
           {/* Brand */}
-          <a
+          <Link
+            className='md:block text-left md:pb-2 text-blueGray-600 inline-block whitespace-nowrap text-sm uppercase font-bold px-0'
+            to='/'
+          >
+            <img
+              src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
+              alt=''
+              className='h-8'
+            />
+          </Link>
+          <Link
+            to='/dashboard'
             className='text-white text-sm uppercase hidden lg:inline-block font-semibold'
-            href='#pablo'
-            onClick={(e) => e.preventDefault()}
           >
             Dashboard
-          </a>
+          </Link>
 
           {/* User */}
           <div className='w-3/12 flex justify-end gap-4'>
