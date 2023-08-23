@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LoginView = () => {
   return (
-    <div className=' flex items-center justify-center'>
+    <div className=' flex items-center justify-center p-10'>
       <div className='max-w-md w-full p-6 rounded-lg shadow-md'>
         <div className='flex justify-center mb-5'>
           <img
@@ -13,7 +13,7 @@ const LoginView = () => {
           />
         </div>
         <h1 className='text-2xl font-semibold text-center text-gray-500 mb-6'>
-          Registro
+          Login
         </h1>
         <form>
           <div className='mb-4'>

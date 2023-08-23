@@ -1,16 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { Navigate, Outlet } from 'react-router-dom';
 import NavStyle from './NavStyle';
 import SideNaveStyle from './SideNavStyle';
 
 const Layout = () => {
-  return (
-    <>
-      <NavStyle />
-      <SideNaveStyle />
-      <Outlet />
-    </>
-  );
+  const { userInfo } = useSelector((state) => state.auth);
+  return <>{userInfo ? <Outlet /> : <Navigate to='/login' replace />}</>;
 };
 
 export default Layout;
