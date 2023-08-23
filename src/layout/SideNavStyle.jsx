@@ -32,92 +32,34 @@ export default function Sidebar() {
 
             {/* Navigation */}
 
-            <ul className='md:flex-col md:min-w-full flex flex-col list-none'>
+            <ul className='md:flex-col md:min-w-full flex flex-col list-none gap-5'>
               <li className='items-center'>
-                <Link
-                  className={
-                    'text-xs uppercase py-3 font-bold block ' +
-                    (window.location.href.indexOf('/admin/dashboard') !== -1
-                      ? 'text-lightBlue-500 hover:text-lightBlue-600'
-                      : 'text-blueGray-700 hover:text-blueGray-500')
-                  }
-                  to='/admin/dashboard'
-                >
-                  <i
-                    className={
-                      'fas fa-tv mr-2 text-sm ' +
-                      (window.location.href.indexOf('/admin/dashboard') !== -1
-                        ? 'opacity-75'
-                        : 'text-blueGray-300')
-                    }
-                  ></i>{' '}
+                <Link className='' to='/dashboard'>
                   Dashboard
                 </Link>
               </li>
 
               <li className='items-center'>
-                <Link
-                  className={
-                    'text-xs uppercase py-3 font-bold block ' +
-                    (window.location.href.indexOf('/admin/settings') !== -1
-                      ? 'text-lightBlue-500 hover:text-lightBlue-600'
-                      : 'text-blueGray-700 hover:text-blueGray-500')
-                  }
-                  to='/admin/settings'
-                >
-                  <i
-                    className={
-                      'fas fa-tools mr-2 text-sm ' +
-                      (window.location.href.indexOf('/admin/settings') !== -1
-                        ? 'opacity-75'
-                        : 'text-blueGray-300')
-                    }
-                  ></i>{' '}
-                  Settings
+                <Link className='' to='/products'>
+                  Product List
                 </Link>
               </li>
 
               <li className='items-center'>
-                <Link
-                  className={
-                    'text-xs uppercase py-3 font-bold block ' +
-                    (window.location.href.indexOf('/admin/tables') !== -1
-                      ? 'text-lightBlue-500 hover:text-lightBlue-600'
-                      : 'text-blueGray-700 hover:text-blueGray-500')
-                  }
-                  to='/admin/tables'
-                >
-                  <i
-                    className={
-                      'fas fa-table mr-2 text-sm ' +
-                      (window.location.href.indexOf('/admin/tables') !== -1
-                        ? 'opacity-75'
-                        : 'text-blueGray-300')
-                    }
-                  ></i>{' '}
-                  Tables
+                <Link className='' to='/users'>
+                  User List
                 </Link>
               </li>
 
               <li className='items-center'>
-                <Link
-                  className={
-                    'text-xs uppercase py-3 font-bold block ' +
-                    (window.location.href.indexOf('/admin/maps') !== -1
-                      ? 'text-lightBlue-500 hover:text-lightBlue-600'
-                      : 'text-blueGray-700 hover:text-blueGray-500')
-                  }
-                  to='/admin/maps'
-                >
-                  <i
-                    className={
-                      'fas fa-map-marked mr-2 text-sm ' +
-                      (window.location.href.indexOf('/admin/maps') !== -1
-                        ? 'opacity-75'
-                        : 'text-blueGray-300')
-                    }
-                  ></i>{' '}
-                  Maps
+                <Link className='' to='/setting'>
+                  Setting
+                </Link>
+              </li>
+
+              <li className='items-center'>
+                <Link className='' to='/'>
+                  Logout
                 </Link>
               </li>
             </ul>

@@ -13,6 +13,7 @@ import SettingView from '../pages/setting/SettingView';
 import PrivateRoute from './ProvetRoute';
 import ErrorView from '../pages/error/ErrorView';
 import Dashboard from '../pages/dashboard/Dashboard';
+import UsersView from '../pages/users/UsersView';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ export const router = createBrowserRouter(
       <Route path='/' element={<PrivateRoute />}>
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/products' element={<ProductsView />} />
+        <Route path='/users' element={<UsersView />} />
         <Route path='/setting' element={<SettingView />} />
         {/* <Route path='/edit/:id' element={<EditView />} />
         <Route path='/create' element={<CreateNote />} />
