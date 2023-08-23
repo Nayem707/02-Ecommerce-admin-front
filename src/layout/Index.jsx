@@ -1,16 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavStyle from './NavStyle';
-import Topnav from './Topnav';
-import FooterStyle from './FooterStyle';
+import SideNaveStyle from './SideNavStyle';
 
 const Layout = () => {
   return (
     <>
-      <Topnav />
       <NavStyle />
+      <SideNaveStyle />
       <Outlet />
-      <FooterStyle />
     </>
   );
 };

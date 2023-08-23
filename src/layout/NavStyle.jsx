@@ -4,17 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 function NavStyle() {
   return (
     <>
-      <header className='header sticky top-0 bg-white shadow-md flex items-center justify-between px-7 py-02'>
-        <h1 className='w-3/12'>
-          <Link to='/'>
-            <img
-              src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
-              alt=''
-              className='h-20'
-            />
-          </Link>
-        </h1>
-
+      <header className='header  bg-white shadow-md flex items-center justify-between px-7 py-2'>
         <nav className='nav font-semibold text-lg'>
           <ul className='flex items-center'>
             <li className='p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active'>
@@ -23,55 +13,8 @@ function NavStyle() {
             <li className='p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer'>
               <Link to='/products'>Products</Link>
             </li>
-            <li className='p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer'>
-              <Link to='/cart'>Collections</Link>
-            </li>
-            <li className='p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer'>
-              <Link to='/contact'>Contact</Link>
-            </li>
           </ul>
         </nav>
-
-        <div className='box'>
-          <div className='box-wrapper'>
-            <div className=' bg-white rounded flex items-center w-full p-3 shadow-sm border border-gray-200'>
-              <button className='outline-none focus:outline-none'>
-                <svg
-                  className=' w-5 text-gray-600 h-5 cursor-pointer'
-                  fill='none'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                >
-                  <path d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'></path>
-                </svg>
-              </button>
-              <input
-                type='search'
-                name=''
-                id=''
-                placeholder='search for Products'
-                className='w-full pl-4 text-sm outline-none focus:outline-none bg-transparent'
-              />
-              <div className='select'>
-                <select
-                  name=''
-                  id=''
-                  className='text-sm outline-none focus:outline-none bg-transparent'
-                >
-                  <option value='all' selected>
-                    All
-                  </option>
-                  <option value='photo'>T-shrt</option>
-                  <option value='illustration'>Bug</option>
-                  <option value='vector'>Vector</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className='w-3/12 flex justify-end gap-4'>
           <a href='notifications'>
@@ -90,7 +33,6 @@ function NavStyle() {
               />
             </svg>
           </a>
-          <button>ModalView</button>
 
           <NavLink to='/setting/user'>
             <svg
