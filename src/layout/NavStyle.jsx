@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import ModalView from '../components/common/Modal';
+// import ModalView from '../components/common/Modal';
 
 function NavStyle() {
   return (
@@ -90,9 +90,7 @@ function NavStyle() {
               />
             </svg>
           </a>
-          <button>
-            <ModalView />
-          </button>
+          <button>ModalView</button>
 
           <NavLink to='/setting/user'>
             <svg
