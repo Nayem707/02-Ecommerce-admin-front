@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../../layout/SideNavStyle';
 import ProductsList from '../../components/products/ProductsList';
-import PList from '../../components/products/PList';
+import AddProducts from '../../components/products/AddProducts';
 
 const ProductsView = () => {
   return (
@@ -11,7 +11,12 @@ const ProductsView = () => {
           <Sidebar />
         </div>
         <div className='w-full pt-10 px-4 '>
-          <div className='text-3xl mb-6 font-semibold'>Products List</div>
+          <div className=' mb-6 flex justify-between'>
+            <h2 className='text-3xl  font-semibold'>Products List</h2>
+            <div className='  hover:bg-gray-400 text-gray-100'>
+              <AddProducts />
+            </div>
+          </div>
           <div className=''>
             <ProductsList />
           </div>

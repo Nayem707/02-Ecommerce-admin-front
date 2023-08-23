@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductDetails = () => {
+const UserDetails = () => {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
@@ -8,9 +8,9 @@ const ProductDetails = () => {
       <span
         type='button'
         onClick={() => setShowModal(true)}
-        className='h-8 mt-2 w-24 cursor-pointer font-semibold transition-all hover:text-blue-700 bg-pink-200 flex justify-center items-center text-sm rounded-full'
+        className=' cursor-pointer text-fuchsia-700'
       >
-        more info
+        User info
       </span>
 
       {showModal ? (
@@ -50,4 +50,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default UserDetails;

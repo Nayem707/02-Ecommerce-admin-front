@@ -1,5 +1,6 @@
 import React from 'react';
 import EditModal from '../common/Modal';
+import ProductDetails from './ProductDetails';
 
 const ProductsList = () => {
   return (
@@ -66,18 +67,44 @@ const ProductsList = () => {
           </div>
 
           <div className=' grid  grid-cols-4 gap-3 '>
-            <div className='md:flex md:justify-center md:flex-wrap gap-6'>
+            <div className='  md:flex md:justify-center md:flex-wrap gap-6'>
               <div className='w-full h-84 p-5 border bg-white mt-5 rounded-lg md:w-80'>
                 <div className='flex items-center gap-1'>
-                  <img src='https://imgur.com/paKJ7DO.png' />
+                  <img src='https://poshgarments.com/wp-content/uploads/2021/09/Mens-Shirt-MWS0001-450x450.jpg' />
                 </div>
                 <p className='text-lg font-semibold mt-1'>
                   Increase confidence with TrustPilot reviews
                 </p>
-                <span className='h-8 mt-2 w-24 cursor-pointer font-semibold transition-all hover:text-blue-700 bg-pink-200 flex justify-center items-center text-sm rounded-full'>
-                  Integrations
-                </span>
-
+                <div className=' flex gap-2'>
+                  <span className='h-8 mt-2 w-24 cursor-pointer font-semibold transition-all hover:text-blue-700 bg-pink-200 flex justify-center items-center text-sm rounded-full'>
+                    $35
+                  </span>
+                  <ProductDetails />
+                </div>
+                <div className='flex justify-center items-center gap-3 mt-6'>
+                  <div className=''>
+                    <EditModal />
+                  </div>
+                  <div className=''>
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='  md:flex md:justify-center md:flex-wrap gap-6'>
+              <div className='w-full h-84 p-5 border bg-white mt-5 rounded-lg md:w-80'>
+                <div className='flex items-center gap-1'>
+                  <img src='https://poshgarments.com/wp-content/uploads/2021/09/Mens-Shirt-MWS0001-450x450.jpg' />
+                </div>
+                <p className='text-lg font-semibold mt-1'>
+                  Increase confidence with TrustPilot reviews
+                </p>
+                <div className=' flex gap-2'>
+                  <span className='h-8 mt-2 w-24 cursor-pointer font-semibold transition-all hover:text-blue-700 bg-pink-200 flex justify-center items-center text-sm rounded-full'>
+                    $35
+                  </span>
+                  <ProductDetails />
+                </div>
                 <div className='flex justify-center items-center gap-3 mt-6'>
                   <div className=''>
                     <EditModal />

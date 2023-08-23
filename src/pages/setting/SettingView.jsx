@@ -1,6 +1,5 @@
 import React from 'react';
 import Sidebar from '../../layout/SideNavStyle';
-import AddProduct from '../../components/products/AddProduct';
 
 const SettingView = () => {
   return (
@@ -12,9 +11,7 @@ const SettingView = () => {
           </div>
           <div className='w-full pt-10 px-4 '>
             <div className='text-3xl mb-6'>User information</div>1
-            <div className=''>
-              <AddProduct />
-            </div>
+            <div className=''>AddProduct</div>
           </div>
         </div>
       </div>
