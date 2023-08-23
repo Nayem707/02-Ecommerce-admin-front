@@ -15,14 +15,8 @@ function NavStyle() {
             <img
               src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
               alt=''
-              className='h-8'
+              className='h-10 rounded-full'
             />
-          </Link>
-          <Link
-            to='/dashboard'
-            className='text-white text-sm uppercase hidden lg:inline-block font-semibold'
-          >
-            Dashboard
           </Link>
 
           {/* User */}

@@ -1,22 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginView = () => {
+  const navigate = useNavigate();
   return (
-    <div className=' flex items-center justify-center p-10'>
-      <div className='max-w-md w-full p-6 rounded-lg shadow-md'>
-        <div className='flex justify-center mb-5'>
+    <div className=' flex items-center justify-center p-10 '>
+      <div className='max-w-md w-full p-6 rounded-lg shadow-md border border-cyan-500'>
+        <div className='flex justify-center mb-5 '>
           <img
             src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
             alt='Logo'
-            className='w-30 h-20'
+            className='w-30 h-20 rounded-full'
           />
         </div>
         <h1 className='text-2xl font-semibold text-center text-gray-500 mb-6'>
           Login
         </h1>
         <form>
-          <div className='mb-4'>
+          <div className='mb-4 '>
             <label className='block mb-2 text-sm text-gray-600'>Name</label>
             <input
               type='text'
@@ -48,6 +49,7 @@ const LoginView = () => {
             />
           </div>
           <button
+            onClick={() => navigate('/dashboard')}
             type='submit'
             className='w-32 bg-gradient-to-r bg-pink-500 text-white py-2 rounded-lg mx-auto block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 mb-2'
           >

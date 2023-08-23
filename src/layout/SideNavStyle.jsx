@@ -46,14 +46,20 @@ export default function Sidebar() {
               </li>
 
               <li className='items-center'>
-                <Link className='' to='/users'>
-                  User List
+                <Link className='' to='/orders'>
+                  Order List
                 </Link>
               </li>
 
               <li className='items-center'>
-                <Link className='' to='/orders'>
-                  Order List
+                <Link className='' to='/customer'>
+                  Customer List
+                </Link>
+              </li>
+
+              <li className='items-center'>
+                <Link className='' to='/users'>
+                  Users
                 </Link>
               </li>
 

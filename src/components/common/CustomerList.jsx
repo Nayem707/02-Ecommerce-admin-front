@@ -1,7 +1,7 @@
 import React from 'react';
 import Pagination from './Pagination';
 
-const UsersList = () => {
+const CustomerList = () => {
   return (
     <section className=' sm:px-5'>
       <div className=''>
@@ -232,4 +232,4 @@ const UsersList = () => {
   );
 };
 
-export default UsersList;
+export default CustomerList;

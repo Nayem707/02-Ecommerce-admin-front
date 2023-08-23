@@ -10,7 +10,7 @@ const OrderView = () => {
           <Sidebar />
         </div>
         <div className='w-full pt-10 px-4 '>
-          <div className='text-3xl mb-6'>Order List Overview</div>
+          <div className='text-3xl mb-6 font-semibold'>Order List Overview</div>
           <div className=''>
             <OrderList />
           </div>

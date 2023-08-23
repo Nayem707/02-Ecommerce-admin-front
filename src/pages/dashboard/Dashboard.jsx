@@ -12,7 +12,9 @@ const Dashboard = () => {
             <Sidebar />
           </div>
           <div className='w-full pt-10 px-4 '>
-            <div className='text-3xl mb-6'>Products Over View</div>
+            <div className='text-3xl mb-6 font-semibold'>
+              Products Over View
+            </div>
             <HeaderDash />
             <div className=''>
               <LineChart />

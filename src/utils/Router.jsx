@@ -15,6 +15,7 @@ import ErrorView from '../pages/error/ErrorView';
 import Dashboard from '../pages/dashboard/Dashboard';
 import UsersView from '../pages/users/UsersView';
 import OrderView from '../pages/order/OrderView';
+import CustomerView from '../pages/customer/CustomerView';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ export const router = createBrowserRouter(
       <Route path='/' element={<PrivateRoute />}>
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/products' element={<ProductsView />} />
+        <Route path='/customer' element={<CustomerView />} />
         <Route path='/users' element={<UsersView />} />
         <Route path='/orders' element={<OrderView />} />
         <Route path='/setting' element={<SettingView />} />

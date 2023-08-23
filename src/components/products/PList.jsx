@@ -2,7 +2,7 @@ import React from 'react';
 
 const PList = () => {
   return (
-    <div className='-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8'>
+    <div className=' '>
       <div className='align-middle rounded-tl-lg rounded-tr-lg inline-block w-full py-4 overflow-hidden bg-white shadow-lg px-12'>
         <div className='flex justify-between'>
           <div className='inline-flex border rounded w-7/12 px-2 lg:px-6 h-12 bg-transparent'>
@@ -34,7 +34,7 @@ const PList = () => {
               </div>
               <input
                 type='text'
-                className='flex-shrink flex-grow flex-auto leading-normal tracking-wide w-px flex-1 border border-none border-l-0 rounded rounded-l-none px-3 relative focus:outline-none text-xxs lg:text-xs lg:text-base text-gray-500 font-thin'
+                className='flex-shrink flex-grow flex-auto leading-normal tracking-wide w-px  border border-none border-l-0 rounded rounded-l-none px-3 relative focus:outline-none text-xxs  lg:text-base text-gray-500 font-thin'
                 placeholder='Search'
               />
             </div>

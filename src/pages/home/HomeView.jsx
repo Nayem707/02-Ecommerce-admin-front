@@ -16,9 +16,8 @@ export default function HomeView() {
             Get Manage Your Products
           </h1>
           <p className='mt-6 mb-8 text-lg sm:mb-12'>
-            Dictum aliquam porta in condimentum ac integer
-            <br className='hidden md:inline lg:hidden' />
-            turpis pulvinar, est scelerisque ligula sem
+            if you want better exprience plz make sure your Desktop or mobile
+            Dark or Ligth Mode on
           </p>
           <div className='flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start'>
             <Link
