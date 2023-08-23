@@ -1,4 +1,5 @@
 import React from 'react';
+import EditModal from '../common/Modal';
 
 const ProductsList = () => {
   return (
@@ -79,7 +80,7 @@ const ProductsList = () => {
 
                 <div className='flex justify-center items-center gap-3 mt-6'>
                   <div className=''>
-                    <button>Edit</button>
+                    <EditModal />
                   </div>
                   <div className=''>
                     <button>Delete</button>

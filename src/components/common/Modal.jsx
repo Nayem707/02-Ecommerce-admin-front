@@ -1,18 +1,17 @@
 import React from 'react';
-import CheckoutForm from './ChekoutForm';
 
 const EditModal = () => {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
     <>
-      <span
+      <button
         type='button'
         onClick={() => setShowModal(true)}
         className='flex items-center justify-center bg-slate-600 text-slate-200 cursor-pointer rounded-md border border-transparent h-10 text-base font-medium  shadow-sm hover:bg-indigo-700'
       >
-        Checkout
-      </span>
+        Edit
+      </button>
 
       {showModal ? (
         <>
@@ -21,9 +20,7 @@ const EditModal = () => {
               {/*content*/}
               <div className='border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
                 {/*body*/}
-                <div className='relative flex-auto'>
-                  <CheckoutForm />
-                </div>
+                <div className='relative flex-auto'>CheckoutForm</div>
                 {/*footer*/}
                 <div className='flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b'>
                   <button

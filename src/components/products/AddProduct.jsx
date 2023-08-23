@@ -2,140 +2,115 @@ import React from 'react';
 
 const AddProduct = () => {
   return (
-    <section className='max-w-4xl p-6 mx-auto bg-indigo-600 rounded-md shadow-md dark:bg-gray-800 mt-20'>
-      <h1 className='text-xl font-bold text-white capitalize dark:text-white'>
-        Account settings
-      </h1>
-      <form>
-        <div className='grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2'>
-          <div>
-            <label className='text-white dark:text-gray-200'>Username</label>
-            <input
-              id='username'
-              type='text'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-
-          <div>
-            <label className='text-white dark:text-gray-200'>
-              Email Address
-            </label>
-            <input
-              id='emailAddress'
-              type='email'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-
-          <div>
-            <label className='text-white dark:text-gray-200'>Password</label>
-            <input
-              id='password'
-              type='password'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-
-          <div>
-            <label className='text-white dark:text-gray-200'>
-              Password Confirmation
-            </label>
-            <input
-              id='passwordConfirmation'
-              type='password'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-          <div>
-            <label className='text-white dark:text-gray-200'>Color</label>
-            <input
-              id='color'
-              type='color'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-          <div>
-            <label className='text-white dark:text-gray-200'>Select</label>
-            <select className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'>
-              <option>Surabaya</option>
-              <option>Jakarta</option>
-              <option>Tangerang</option>
-              <option>Bandung</option>
-            </select>
-          </div>
-          <div>
-            <label className='text-white dark:text-gray-200'>Range</label>
-            <input
-              id='range'
-              type='range'
-              className='block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-          <div>
-            <label className='text-white dark:text-gray-200'>Date</label>
-            <input
-              id='date'
-              type='date'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            />
-          </div>
-          <div>
-            <label className='text-white dark:text-gray-200'>Text Area</label>
-            <textarea
-              id='textarea'
-              type='textarea'
-              className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring'
-            ></textarea>
-          </div>
-          <div>
-            <label className='block text-sm font-medium text-white'>
-              Image
-            </label>
-            <div className='mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md'>
-              <div className='space-y-1 text-center'>
-                <svg
-                  className='mx-auto h-12 w-12 text-white'
-                  stroke='currentColor'
-                  fill='none'
-                  viewBox='0 0 48 48'
-                  aria-hidden='true'
-                >
-                  <path
-                    d='M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
-                <div className='flex text-sm text-gray-600'>
-                  <label
-                    htmlFor='file-upload'
-                    className='relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500'
-                  >
-                    <span className=''>Upload a file</span>
-                    <input
-                      id='file-upload'
-                      name='file-upload'
-                      type='file'
-                      className='sr-only'
-                    />
-                  </label>
-                  <p className='pl-1 text-white'>or drag and drop</p>
+    <div className='relative min-h-screen flex items-center justify-center bg-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center'>
+      <div className='absolute bg-black opacity-60 inset-0 z-0'></div>
+      <div className='max-w-md w-full space-y-8 p-10 bg-white rounded-xl shadow-lg z-10'>
+        <div className='grid  gap-8 grid-cols-1'>
+          <div className='flex flex-col '>
+            <div className='flex flex-col sm:flex-row items-center'>
+              <h2 className='font-semibold text-lg mr-auto'>Edit</h2>
+              <div className='w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0'></div>
+            </div>
+            <div className='mt-5'>
+              <div className='form'>
+                <div className='md:space-y-2 mb-3'>
+                  <div className='flex items-center py-6'>
+                    <div className='w-12 h-12 mr-4 flex-none rounded-xl border overflow-hidden'>
+                      <img
+                        className='w-12 h-12 mr-4 object-cover'
+                        src=''
+                        alt='Avatar Upload'
+                      />
+                    </div>
+                    <label className='cursor-pointer '>
+                      <span className='focus:outline-none text-white text-sm py-2 px-4 rounded-full bg-green-400 hover:bg-green-500 hover:shadow-lg'>
+                        Browse
+                      </span>
+                      <input type='file' className='hidden' />
+                    </label>
+                  </div>
                 </div>
-                <p className='text-xs text-white'>PNG, JPG, GIF up to 10MB</p>
+
+                <div className='mb-3 space-y-2 w-full text-xs'>
+                  <label className=' font-semibold text-gray-600 py-2'>
+                    Product Title
+                  </label>
+                  <div className='flex flex-wrap items-stretch w-full mb-4 relative'>
+                    <input
+                      type='text'
+                      className='flex-shrink flex-grow leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow'
+                      placeholder='title'
+                    />
+                  </div>
+                </div>
+                <div className='md:flex md:flex-row md:space-x-4 w-full text-xs'>
+                  <div className='w-full flex flex-col mb-3'>
+                    <label className='font-semibold text-gray-600 py-2'>
+                      Prize
+                    </label>
+                    <input
+                      placeholder='prize'
+                      className='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4'
+                      type='number'
+                      name='integration[street_address]'
+                      id='integration_street_address'
+                    />
+                  </div>
+                  <div className='w-full flex flex-col mb-3'>
+                    <label className='font-semibold text-gray-600 py-2'>
+                      Catagory
+                    </label>
+                    <select
+                      className='block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4 md:w-full '
+                      required='required'
+                      name='integration[city_id]'
+                      id='integration_city_id'
+                    >
+                      <option value=''>Selete Catagory</option>
+                      <option value=''>Shoes</option>
+                      <option value=''>T-shirt</option>
+                      <option value=''>Watch</option>
+                    </select>
+                    <p className='text-sm text-red-500 hidden mt-3' id='error'>
+                      Please fill out this field.
+                    </p>
+                  </div>
+                </div>
+                <div className='flex-auto w-full mb-1 text-xs space-y-2'>
+                  <label className='font-semibold text-gray-600 py-2'>
+                    Description
+                  </label>
+                  <textarea
+                    required=''
+                    name='message'
+                    id=''
+                    className=' min-h-[100px] max-h-[300px] h-28 appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg  py-4 px-4'
+                    placeholder='Enter your product info'
+                    spellCheck='false'
+                  ></textarea>
+                  <p className='text-xs text-gray-400 text-left my-3'>
+                    You inserted 0 characters
+                  </p>
+                </div>
+                <p className='text-xs text-red-500 text-right my-3'>
+                  Required fields are marked with an asterisk{' '}
+                  <abbr title='Required field'>*</abbr>
+                </p>
+                <div className='mt-5 text-right md:space-x-3 md:block flex flex-col-reverse'>
+                  <button className='mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100'>
+                    {' '}
+                    Cancel{' '}
+                  </button>
+                  <button className='mb-2 md:mb-0 bg-green-400 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-green-500'>
+                    Save
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div className='flex justify-end mt-6'>
-          <button className='px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600'>
-            Save
-          </button>
-        </div>
-      </form>
-    </section>
+      </div>
+    </div>
   );
 };
 
