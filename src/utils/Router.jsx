@@ -9,10 +9,10 @@ import HomeView from '../pages/home/HomeView';
 import LoginView from '../pages/login/LoginView';
 import RegisterView from '../pages/register/RegisterView';
 import ErrorView from '../pages/error/ErrorView';
-import Products from '../pages/Products/Products';
+import Products from '../pages/products/ProductsView';
 import CartView from '../pages/cart/CartView';
 import SettingView from '../pages/setting/SettingView';
-import ProductDetails from '../components/common/ProductDetails';
+import ProductDetails from '../components/products/ProductDetails';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
