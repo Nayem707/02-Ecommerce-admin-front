@@ -16,12 +16,14 @@ import Dashboard from '../pages/dashboard/Dashboard';
 import UsersView from '../pages/users/UsersView';
 import OrderView from '../pages/order/OrderView';
 import CustomerView from '../pages/customer/CustomerView';
+import InfoView from '../pages/info/InfoView';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index={true} path='/' element={<HomeView />} />
       <Route path='/login' element={<LoginView />} />
+      <Route path='/info' element={<InfoView />} />
       <Route path='/register' element={<RegisterView />} />
       <Route path='/' element={<PrivateRoute />}>
         <Route path='/dashboard' element={<Dashboard />} />

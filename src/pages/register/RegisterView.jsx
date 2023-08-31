@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 const RegisterView = () => {
   return (
-    <div className='min-w-screen bg-gray-900 flex items-center justify-center'>
-      <div className='bg-gray-100 text-gray-500 shadow-xl w-full  '>
-        <div className='md:flex w-full '>
-          <div className='hidden md:block w-1/2 bg-orange-200 p-24 rounded-lg '>
+    <div className='min-w-screen flex items-center justify-center'>
+      <div className=' text-gray-500 shadow-xl w-full  '>
+        <div className='md:flex '>
+          <div className='mx-auto flex '>
             <svg
               id='a87032b8-5b37-4b7e-a4d9-4dbfbe394641'
               data-name='Layer 1'
               xmlns='http://www.w3.org/2000/svg'
-              width='50%'
+              width='100%'
               height='auto'
               viewBox='0 0 744.84799 747.07702'
             >
@@ -213,13 +213,13 @@ const RegisterView = () => {
           </div>
           <div className='w-full md:w-1/2 py-10 px-5 md:px-10'>
             <div className='text-center mb-10'>
-              <h1 className='font-bold text-3xl text-gray-900'>REGISTER</h1>
+              <h1 className='font-bold text-3xl '>REGISTER</h1>
               <p>Enter your information to register</p>
             </div>
             <div>
               <div className='flex -mx-3'>
                 <div className='w-1/2 px-3 mb-5'>
-                  <label for='' className='text-xs font-semibold px-1'>
+                  <label className='text-xs font-semibold px-1'>
                     First name
                   </label>
                   <div className='flex'>
@@ -234,7 +234,7 @@ const RegisterView = () => {
                   </div>
                 </div>
                 <div className='w-1/2 px-3 mb-5'>
-                  <label for='' className='text-xs font-semibold px-1'>
+                  <label className='text-xs font-semibold px-1'>
                     Last name
                   </label>
                   <div className='flex'>

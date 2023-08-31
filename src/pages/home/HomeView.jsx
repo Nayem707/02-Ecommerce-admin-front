@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import FooterStyle from '../../layout/FooterStyle';
 
 export default function HomeView() {
   return (
-    <section className='dark:bg-gray-800 dark:text-gray-100'>
+    <section className=' dark:text-gray-100 h-screen'>
       <div className='container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between'>
         <div className='flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128'>
           <img
@@ -22,7 +23,7 @@ export default function HomeView() {
           <div className='flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start'>
             <Link
               rel='noopener noreferrer'
-              to='/'
+              to='/info'
               className='px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900'
             >
               More info
@@ -37,6 +38,7 @@ export default function HomeView() {
           </div>
         </div>
       </div>
+      <FooterStyle />
     </section>
   );
 }

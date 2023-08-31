@@ -1,14 +1,13 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const LoginView = () => {
   const navigate = useNavigate();
   return (
-    <div className=' flex items-center justify-center p-10 '>
-      <div className='max-w-md w-full p-6 rounded-lg shadow-md border border-cyan-500'>
+    <div className=' flex items-center justify-center'>
+      <div className='max-w-md w-full p-6 rounded-lg shadow-md border border-cyan-100'>
         <div className='flex justify-center mb-5 '>
           <img
-            src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
+            src='https://res.cloudinary.com/nayem490/image/upload/v1693437906/shop-logo_zlvemt.png'
             alt='Logo'
             className='w-30 h-20 rounded-full'
           />

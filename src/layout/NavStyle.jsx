@@ -5,7 +5,7 @@ function NavStyle() {
   return (
     <>
       {/* Navbar */}
-      <nav className=' bg-slate-200 top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4'>
+      <nav className='  top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4'>
         <div className='w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4'>
           {/* Brand */}
           <Link
@@ -13,7 +13,7 @@ function NavStyle() {
             to='/'
           >
             <img
-              src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
+              src='https://res.cloudinary.com/nayem490/image/upload/v1693437906/shop-logo_zlvemt.png'
               alt=''
               className='h-10 rounded-full'
             />

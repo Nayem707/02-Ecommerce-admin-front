@@ -10,13 +10,13 @@ export default function Sidebar() {
         <div className='md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto'>
           {/* Brand */}
           <Link
-            className='md:block text-left md:pb-2 text-blueGray-600 inline-block whitespace-nowrap text-sm uppercase font-bold px-0'
-            to='/'
+            className='md:block text-left md:p-2 text-blueGray-600 inline-block whitespace-nowrap text-sm uppercase font-bold px-0'
+            to='/dashboard'
           >
             <img
-              src='https://getlogovector.com/wp-content/uploads/2021/05/yours-clothing-logo-vector.png'
+              src='https://res.cloudinary.com/nayem490/image/upload/v1693437906/shop-logo_zlvemt.png'
               alt=''
-              className='h-16'
+              className='h-12'
             />
           </Link>
 
