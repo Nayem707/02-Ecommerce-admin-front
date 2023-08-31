@@ -18,7 +18,7 @@ const data = {
 
 const LineChart = () => {
   return (
-    <div className=' m-10'>
+    <div className=' p-5 bg-slate-50'>
       <Line data={data} />
     </div>
   );

@@ -21,7 +21,7 @@ const AddProducts = () => {
               <div className='border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
                 {/*body*/}
                 <div className='relative flex-auto'>
-                  <div className='max-w-md w-full space-y-8 p-5 bg-white rounded-xl shadow-lg z-10'>
+                  <div className='max-w-md w-full space-y-8 p-5  rounded-xl shadow-lg z-10'>
                     <div className='grid  gap-8 grid-cols-1'>
                       <div className='flex flex-col '>
                         <div className='flex flex-col sm:flex-row items-center'>

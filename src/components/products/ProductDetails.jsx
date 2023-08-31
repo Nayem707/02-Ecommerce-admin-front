@@ -33,7 +33,7 @@ const ProductDetails = () => {
                   </p>
 
                   <span
-                    className='p-1 text-lg font-semibold cursor-pointer'
+                    className='p-1 text-lg font-semibold cursor-pointer text-red-600'
                     onClick={() => setShowModal(false)}
                   >
                     X

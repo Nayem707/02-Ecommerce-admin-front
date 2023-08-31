@@ -6,7 +6,7 @@ import LineChart from '../../components/common/LineChart';
 const Dashboard = () => {
   return (
     <>
-      <div className='bg-white relative '>
+      <div className=' relative '>
         <div className=' col-span-2 flex '>
           <div className='p-2 pt-10 w-80 h-screen '>
             <Sidebar />
@@ -16,7 +16,7 @@ const Dashboard = () => {
               Products Over View
             </div>
             <HeaderDash />
-            <div className=''>
+            <div className='p-5 border'>
               <LineChart />
             </div>
           </div>
