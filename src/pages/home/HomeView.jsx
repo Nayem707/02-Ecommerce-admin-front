@@ -5,14 +5,14 @@ export default function HomeView() {
   return (
     <section className=' dark:text-gray-100 '>
       <div className='container flex flex-col justify-center  mx-auto lg:flex-row lg:justify-between h-screen'>
-        <div className='flex items-center justify-center'>
+        <div className='flex mx-auto items-center justify-center'>
           <img
             src='https://mambaui.com/assets/svg/Business_SVG.svg'
             alt=''
             className='object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128'
           />
         </div>
-        <div className='flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left'>
+        <div className='flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left'>
           <h1 className='text-5xl font-bold leadi sm:text-6xl'>
             Get Manage Your Products
           </h1>
